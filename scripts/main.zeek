@@ -13,7 +13,11 @@
 module Zerologon;
 
 redef enum Notice::Type += {
+    ## Possible CVE-2020-1472 Zerologon exploit attempt detected.
     Zerologon_Attempt,
+
+    ## Possible CVE-2020-1472 Zerologon exploit attempt for domain controller
+    ## password change.
     Zerologon_Password_Change
 };
 
